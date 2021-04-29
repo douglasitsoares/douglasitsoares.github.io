@@ -4,13 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Douglas - Apresentacao Profissional</title>
+    <title id="main">Douglas - Apresentacao Profissional</title>
     <link
       href="https://fonts.googleapis.com/css?family=Roboto:400,700|Roboto+Condensed:700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="assets/styles/app.css" />
 	<script src="assets/scripts/app.js" defer></script>
+  <script src="assets/scripts/tooltip.js" defer></script>
   </head>
   <body>
     <div id="backdrop"></div>
@@ -73,43 +74,68 @@
 
           <section id="knowledge">
 
+
             <div class="row">
               <div class="column">
-                <button><img src="assets/images/JS.png" alt="JS" style="width:70%"></button>
+                
+                
+                <button>
+                
+                   <img src="assets/images/JS.png" alt="JS" id="picture1" style="width:70%">
+                  <uc-tooltip  class="important" text="JavaScript ferramenta de desenvolvimento junto a suas bibliotecas, oferecem inúmeros recursos, vai de sua criatividade.">
+                  </uc-tooltip>
+                </button>
+              
+                
               </div>  
               <div class="column">
-               <button><img src="assets/images/nodejs.png" alt="Nodes" style="width:70%"></button>
+               <button><img src="assets/images/nodejs.png" alt="Nodes" style="width:70%">
+                <uc-tooltip  class="important" text="NodeJS biblioteca de JavaScript com funcionalidades marcantes, importação, execução e facilidade de desenvolver BackEnd"></uc-tooltip>
+              </button>
               </div>
               <div class="column">
-                <button><img src="assets/images/springboot.jpeg" alt="SpringBoot" style="width:95%"></button>
+                <button><img src="assets/images/spring-boot-logo.png" alt="SpringBoot" style="width:95%">
+                  <uc-tooltip  class="important" text="SpringBoot uma ferramenta do Java que aplica processos simples e complexos por consumo de Rest API e muitas outras funcionalidades de acordo o seu negócio, levando a informação pronta em base de uma chamada via FrontEnd Vs BackEnd"></uc-tooltip>
+                </button>
               </div>
             </div>
 
             <div class="row">
               <div class="column">
-                <button><img src="assets/images/mongodb.png" alt="MongoDB" style="width:145%"></button>
+                <button>
+                  <uc-tooltip  class="important" text="MongoDB um banco de dados excelente para uso de coleções e agregados, trazendo de uma forma simples e organizada dados utilizados pelo seu negócio"></uc-tooltip>
+                  <img src="assets/images/mongodb.png" alt="MongoDB" style="width:145%">
+                </button>
               </div>              
               <div class="column">
-                <button><img src="assets/images/postgres.jpg" alt="Postgres" style="width:95%"></button>
+                <button><img src="assets/images/postgres.png" alt="Postgres" style="width:95%">
+                  <uc-tooltip  class="important" text="PostgresSQL um banco de dados estruturado como outros conhecidos no mercado Oracle, MySQL entre outros com a vantagem de ser gratis seu uso"></uc-tooltip>
+                </button>
               </div>  
               <div class="column">
-                <button><img src="assets/images/aws.png" alt="AWS" style="width:105%"></button>
+                <button><img src="assets/images/aws.png" alt="AWS" style="width:100%">
+                  <uc-tooltip  class="important" text="Para grandes corporações nada melhor do usar o AWS como seu principal Cloud e integração contínua como o AWS, permitindo o total controle de ServLess confiável e renomeado no mercado de programação em nuvem"></uc-tooltip>
+                </button>
               </div>                                          
             </div>
 
             <div class="row">
               <div class="column">
-                <button><img src="assets/images/jenkins.png" alt="MongoDB" style="width:65%"></button>
+                <button><img src="assets/images/jenkins.png" alt="MongoDB" style="width:65%">
+                  <uc-tooltip  class="important" text="Jenkins Continuos Integration e Deployment usando Pipeline entre outros recursos desta ferramenta tão importante junto ao gitHub para uma excelente integração e aviso de delivery via WebHook"></uc-tooltip>
+                </button>
               </div>              
               <div class="column">
-                <button><img src="assets/images/github.png" alt="AWS" style="width:85%"></button>
+                <button><img src="assets/images/github.png" alt="AWS" style="width:85%">
+                  <uc-tooltip  class="important" text="GitHub sem dúvidas a principal ferramenta para o desenvolvedor e empresa que mantém seus negócios em controle de versionamento. Essencial entender todos recursos oferecidos por esta fantástica ferrameta"></uc-tooltip>
+                </button>
               </div>                                          
             </div>
 
           </section>
 
 
-          <p>
+          <p id="p1">
             Atualmente tenho utilizado muito as ferramentas apresentadas acima
             para garantir uma performance maior nos trabalhos propostos junto 
             a qualidade e funcionalidade das arquiteturas de processos envolvidos. 
